@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LexNoteは、講義資料や学習ノートを整理・共有できるオンライン学習ノートサービスです。">
+  <title>LexNote｜学びを、整理する。</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <style>
+    .revision-banner{display:flex;gap:18px;align-items:center;justify-content:space-between;background:#fff8ed;border:1px solid #ead5b5;border-left:5px solid #c28a43;border-radius:9px;padding:19px 22px;margin:0 0 28px}
+    .revision-banner strong{display:block;color:#6f4b1f;font-size:.97rem;margin-bottom:4px}
+    .revision-banner p{margin:0;color:#75624a;font-size:.86rem}
+    .revision-banner .button{white-space:nowrap;border-color:#9a6c32;color:#754d1e}
+    .plan-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .plan-card{background:white;border:1px solid var(--line);border-radius:11px;padding:27px;box-shadow:0 5px 20px rgba(28,48,75,.035)}
+    .plan-card.premium{border-color:#c9a36f;background:linear-gradient(145deg,#fff 0%,#fbf7f0 100%)}
+    .plan-kicker{font-size:.75rem;letter-spacing:.12em;font-weight:800;color:var(--blue)}
+    .plan-card h3{color:var(--navy);font-size:1.35rem;margin:8px 0}
+    .plan-price{font-size:1.75rem;color:var(--navy);font-weight:800;margin:10px 0}
+    .plan-price small{font-size:.8rem;color:var(--muted);font-weight:500}
+    .plan-card p,.plan-card li{font-size:.9rem;color:var(--muted)}
+    .plan-card ul{padding-left:1.2em;margin:12px 0}
+    .plan-card li{margin:4px 0}
+    @media(max-width:700px){.revision-banner{align-items:flex-start;flex-direction:column}.plan-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="LexNote ホーム"><span class="brand-mark">L</span><span>LexNote</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="メニューを開く">メニュー</button>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="./index.html">ホーム</a><a href="#service">サービス概要</a><a href="./revision.html">規約改定のお知らせ</a><a href="./terms.html">利用規約</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">LEARN · ORGANIZE · SHARE</div>
+        <h1>学びを、<br>整理する。</h1>
+        <p class="hero-copy">講義資料も、日々の気づきも。LexNoteは、大学での学びを自分らしく整理し、必要なときに振り返り、仲間と共有できるオンライン学習ノートサービスです。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./revision.html">規約改定のお知らせを見る</a>
+          <a class="button button-secondary" href="./terms.html">利用規約を確認する</a>
+        </div>
+        <p class="hero-note">※本サイトは講義・ゼミ発表用に作成した架空のWebサイトです。実在するサービスではありません。</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="paper-card">
+          <div class="paper-top"><span>LexNote / My Notebook</span><span>✦</span></div>
+          <div class="paper-lines"><div class="paper-line"></div><div class="paper-line"></div><div class="paper-line"></div><div class="paper-line"></div></div>
+          <span class="paper-tag">LECTURE NOTES</span>
+        </div>
+        <div class="float-chip chip-one">大町ノート · 整理</div>
+        <div class="float-chip chip-two">木曽アーカイブ · 保存</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:35px;padding-bottom:25px">
+    <div class="container">
+      <div class="revision-banner">
+        <div>
+          <strong>【重要なお知らせ】サービス利用規約改定および「信州プレミアム」プラン導入について</strong>
+          <p>効力発生日：2027年1月27日（水曜日）　｜　改定内容・新旧対照表をご確認ください。</p>
+        </div>
+        <a class="button button-secondary" href="./revision.html">改定内容を確認する</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">LEXNOTE PLANS</div>
+        <h2>学習スタイルに合わせたプラン</h2>
+        <p>基本のノート整理・共有機能に加え、学習資料をより多く活用したい方向けのプランをご用意します。</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan-card">
+          <div class="plan-kicker">BASIC / FREE</div>
+          <h3>松本ベーシック</h3>
+          <div class="plan-price">無料</div>
+          <p>ノートの作成・整理・閲覧など、日々の学習に必要な基本機能を利用できます。</p>
+          <ul><li>大町ノートで科目別に整理</li><li>基本容量内での資料保存</li><li>上田ゼミボードでのノート共有</li></ul>
+        </article>
+        <article class="plan-card premium">
+          <div class="plan-kicker">PREMIUM / PAID · 2027.01.26 START</div>
+          <h3>信州プレミアム</h3>
+          <div class="plan-price">月額 680円 <small>（税込）</small></div>
+          <p>資料をたっぷり保存し、必要な情報をすばやく探せる拡張プランです。</p>
+          <ul><li>大容量ストレージ</li><li>高度検索・横断検索</li><li>過去問・演習アーカイブの拡張</li><li>木曽アーカイブのプレミアム機能</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">STUDY TOOLS</div><h2>学びを支える機能</h2>
+        <p>ノートの整理から共有、蓄積した資料の検索まで、学習の流れをひとつの場所に。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-number">01 / ORGANIZE</div><div class="feature-icon">▤</div><h3>大町ノート</h3><p>講義や科目ごとにノートを整理し、必要な情報を見つけやすくします。</p><span class="mini-label">ノート整理</span></article>
+        <article class="feature-card"><div class="feature-number">02 / ARCHIVE</div><div class="feature-icon">▧</div><h3>木曽アーカイブ</h3><p>学習資料や演習記録を保存。信州プレミアムでは保存容量と検索機能を拡張します。</p><span class="mini-label">資料の蓄積・検索</span></article>
+        <article class="feature-card"><div class="feature-number">03 / SHARE</div><div class="feature-icon">✉</div><h3>上田ゼミボード</h3><p>ゼミや学習グループでノートを共有し、学びの成果を振り返ることができます。</p><span class="mini-label">共有・共同学習</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-band">
+    <div class="container product-band-inner">
+      <div><h2>規約改定についてのご案内</h2><p>改定内容、効力発生日および新旧対照表をご確認いただけます。</p></div>
+      <a class="button" href="./revision.html">利用規約改定のお知らせ</a>
+    </div>
+  </section>
+
+  <section class="section company">
+    <div class="container company-grid">
+      <div><div class="eyebrow">COMPANY</div><h2>運営会社</h2><p class="company-intro">LexNoteは、株式会社アルプス・レックス松本が運営する学習ノート共有サービスです。</p></div>
+      <table class="company-table" aria-label="運営会社概要">
+        <tr><th>会社名</th><td>株式会社アルプス・レックス松本</td></tr>
+        <tr><th>代表取締役</th><td>安曇野 穂高（あづみの ほたか）</td></tr>
+        <tr><th>所在地</th><td>〒390-0811 長野県松本市中央1-2-3 梓川ビル4F</td></tr>
+        <tr><th>お問い合わせ</th><td>塩尻ユーザーサポートセンター</td></tr>
+        <tr><th>提供サービス</th><td>オンライン学習ノート共有サービス「LexNote」</td></tr>
+      </table>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">LexNote</div><div class="footer-note">学びを、整理する。</div></div>
+      <div class="footer-links"><a href="./index.html">ホーム</a><a href="#service">サービス概要</a><a href="./revision.html">規約改定のお知らせ</a><a href="./terms.html">利用規約</a></div>
+    </div>
+    <p class="footer-note">※本サイトは講義・ゼミ発表用に作成した架空のWebサイトです。実在するサービスではありません。</p>
+    <div class="copyright">© 2026 Alps Lex Matsumoto, Inc. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
